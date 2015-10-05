@@ -10,4 +10,6 @@ RUN chmod +x  /usr/local/bin/cassandra-init.sh
 RUN chmod +x  /usr/local/bin/cassandra-singlenode.sh
 # Start Cassandra
 RUN /usr/local/bin/cassandra-init.sh
+EXPOSE 9160
 ENTRYPOINT ["/usr/local/bin/cassandra-singlenode.sh"]
+
